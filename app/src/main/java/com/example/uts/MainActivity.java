@@ -1,9 +1,10 @@
 package com.example.uts;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,11 +12,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
-    new Handler().postDelayed(new Runnable() {@Override public void run (){
-        Intent intent=onNewIntent(MainActivity.this,activity_register.xml.class);
-        startActivity(intent);finish();}},waktu_loading(3000);
-    })
+        new Handler().postDelayed(() -> {
+           Intent  intent = new Intent( MainActivity.this, Register.class );
+           startActivity(intent);
+           finish();
+
+    }, 3000);
+
+    }
 
 }

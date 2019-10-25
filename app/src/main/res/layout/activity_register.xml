@@ -34,7 +34,7 @@
         tools:layout_editor_absoluteY="213dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/username"
         android:layout_width="97dp"
         android:layout_height="35dp"
         android:text="USERNAME"
@@ -42,7 +42,7 @@
         tools:layout_editor_absoluteY="151dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/email"
         android:layout_width="98dp"
         android:layout_height="37dp"
         android:text="EMAIL"
@@ -50,7 +50,7 @@
         tools:layout_editor_absoluteY="213dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/password"
         android:layout_width="106dp"
         android:layout_height="42dp"
         android:text="PASSWORD"
@@ -58,7 +58,7 @@
         tools:layout_editor_absoluteY="271dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/masuk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MASUK"
@@ -66,7 +66,7 @@
         tools:layout_editor_absoluteY="447dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/daftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="DAFTAR"
